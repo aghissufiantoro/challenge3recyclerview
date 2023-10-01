@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="425dp"
+            android:layout_height="434dp"
+            android:src="@color/bgshape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-8dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="53dp"
+            android:layout_height="49dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_shopping_cart_checkout_24"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="53dp"
+            android:layout_height="49dp"
+            android:contentDescription="@string/ayam_bakar"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/baseline_account_circle_24"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menu_awal"
+            android:layout_width="503dp"
+            android:layout_height="154dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableRow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.838"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/gambar_nasi"
+                android:layout_width="62dp"
+                android:layout_height="64dp"
+                android:src="@drawable/lauk"
+                app:layout_constraintEnd_toStartOf="@+id/lauk"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/nasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="monospace"
+                android:text="@string/nasi"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintTop_toBottomOf="@+id/gambar_nasi"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="82dp" />
+
+            <ImageView
+                android:id="@+id/lauk"
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_marginEnd="168dp"
+                android:src="@drawable/lauk"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/susu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="monospace"
+                android:text="@string/susu"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintTop_toBottomOf="@+id/imagesusu"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="377dp" />
+
+            <ImageView
+                android:id="@+id/imagesusu"
+                android:layout_width="52dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="36dp"
+                android:src="@drawable/susu"
+                app:layout_constraintStart_toEndOf="@+id/lauk"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/sayur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="monospace"
+                android:text="@string/sayur"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintTop_toBottomOf="@+id/imagesayur"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="172dp" />
+
+            <ImageView
+                android:id="@+id/imagesayur"
+                android:layout_width="58dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sayur"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="20dp" />
+
+            <TextView
+                android:id="@+id/ayam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="monospace"
+                android:text="@string/lauk"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintTop_toBottomOf="@+id/lauk"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="274dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_home"
+            android:layout_width="351dp"
+            android:layout_height="151dp"
+            android:background="@drawable/makanan_tradisional"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="99dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="263dp"
+                android:layout_height="60dp"
+                android:layout_margin="44dp"
+                android:background="@color/birdong"
+                android:fontFamily="cursive"
+                android:text="@string/_25"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/diskon_25"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="69dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/pesan_makan_di_app_dan_dapatkan_diskon"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:text="@string/mau_makan_apenih_hari_ini"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <TextView
+            android:id="@+id/title_list_menu_makanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="440dp"
+            android:text="@string/list_menu_makanan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/list_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="164dp"
+            android:layout_marginBottom="11dp"
+            android:contentDescription="@string/ayam_bakar"
+            android:src="@drawable/baseline_list_24"
+            app:layout_constraintBottom_toTopOf="@+id/tableRow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.939"
+            app:layout_constraintStart_toEndOf="@+id/title_list_menu_makanan"
+            app:layout_constraintTop_toTopOf="@+id/menu_awal"
+            tools:ignore="MissingConstraints" />
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="480dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_menu_makanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:itemCount="6"
+                tools:listitem="@layout/adapter_main" />
+
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="145dp"
+            android:layout_height="29dp"
+            android:text="@string/hai_binarian"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

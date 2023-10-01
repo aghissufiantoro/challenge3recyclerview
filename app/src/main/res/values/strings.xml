@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">challenge3 recyclerview</string>
+    <string name="rp_50_000">Rp 50.000,-</string>
+    <string name="susu">Susu</string>
+    <string name="ayam_bakar">Ayam Bakar</string>
+    <string name="geprek_mba_rara">Geprek Mba Rara</string>
+    <string name="todo">TODO</string>
+    <string name="list_menu_makanan">List Menu Makanan</string>
+    <string name="rp_15_000">Rp. 15.000,-</string>
+    <string name="hai_binarian">Hai Binarian!!</string>
+    <string name="mau_makan_apenih_hari_ini">Mau Makan apenih hari ini?</string>
+    <string name="pesan_makan_di_app_dan_dapatkan_diskon">Pesan makan di app dan dapatkan diskon</string>
+    <string name="diskon_25">Diskon 25%</string>
+    <string name="_25">25%</string>
+    <string name="lauk">Lauk</string>
+    <string name="sayur">Sayur</string>
+    <string name="nasi">Nasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nasi_bakar">Nasi Bakar</string>
+    <string name="lihat_lokasi">Lihat Lokasi</string>
+</resources>
